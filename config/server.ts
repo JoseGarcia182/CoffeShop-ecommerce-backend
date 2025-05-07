@@ -4,4 +4,5 @@ export default ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  url: 'https://coffeshop-ecommerce-backend-2.onrender.com',
 });
