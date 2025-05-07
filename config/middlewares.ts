@@ -13,7 +13,7 @@ module.exports = [
     name: 'strapi::cors',
     config: {
       enabled: true,
-      origin: ['https://coffe-shop-ecommerce.vercel.app/'], 
+      origin: ['https://coffe-shop-ecommerce.vercel.app'], 
     },
   },
 
