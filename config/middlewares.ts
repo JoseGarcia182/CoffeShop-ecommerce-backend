@@ -13,7 +13,7 @@ module.exports = [
     name: 'strapi::cors',
     config: {
       enabled: true,
-      origin: ['http://localhost:3000'],  // Reemplaza con el dominio de tu frontend
+      origin: ['https://coffe-shop-ecommerce-730f8ykkz-jose-pablo-garcias-projects.vercel.app'],  // Reemplaza con el dominio de tu frontend
     },
   },
 

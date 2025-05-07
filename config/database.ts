@@ -25,19 +25,13 @@ export default ({ env }) => {
     },
     postgres: {
       connection: {
-        connectionString: env('DATABASE_URL'),
-        host: env('DATABASE_HOST', 'localhost'),
+        host: env('DATABASE_HOST', 'ep-empty-dust-acb61imk-pooler.sa-east-1.aws.neon.tech'),
         port: env.int('DATABASE_PORT', 5432),
-        database: env('DATABASE_NAME', 'ecommerce-coffeshop'),
-        user: env('DATABASE_USERNAME',''),
-        password: env('DATABASE_PASSWORD',''),
-        ssl: env.bool('DATABASE_SSL', false) && {
-          key: env('DATABASE_SSL_KEY', undefined),
-          cert: env('DATABASE_SSL_CERT', undefined),
-          ca: env('DATABASE_SSL_CA', undefined),
-          capath: env('DATABASE_SSL_CAPATH', undefined),
-          cipher: env('DATABASE_SSL_CIPHER', undefined),
-          rejectUnauthorized: env.bool('DATABASE_SSL_REJECT_UNAUTHORIZED', true),
+        database: env('DATABASE_NAME', 'neondb'),
+        user: env('DATABASE_USERNAME', 'neondb_owner'),
+        password: env('DATABASE_PASSWORD', 'npg_dP3HESotyT1C'),
+        ssl: {
+          rejectUnauthorized: false,
         },
         schema: env('DATABASE_SCHEMA', 'public'),
       },

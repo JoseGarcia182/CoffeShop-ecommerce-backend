@@ -22,7 +22,7 @@
     "better-sqlite3": "11.3.0",
     "cors": "^2.8.5",
     "mercadopago": "^2.5.0",
-    "pg": "^8.15.1",
+    "pg": "^8.15.6",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
